@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-apache-7
+  name: my-apache-feroz
   namespace: feroz
 spec:
   selector:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: apache
-        image: ferozfrk/apache:7
+        image: ferozfrk/apache:feroz
         ports:
         - containerPort: 80

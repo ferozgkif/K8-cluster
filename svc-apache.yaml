@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: apache-svc-77
+  name: apache-svc-feroz
   namespace: feroz
   labels:
   annotations:
