@@ -1,0 +1,19 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: apache-svc-5
+  namespace: feroz
+  labels:
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: clb
+spec:
+  externalTrafficPolicy: Local
+  type: LoadBalancer
+  selector:
+    app: apache
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+    - name: https
+      port: 443
